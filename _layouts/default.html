@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include header.html %}
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <section class="version-dropdown">
+        <span class="type">Version</span>
+        <span class="value">0.9.0 <i class="fa fa-angle-down"></i></span>
+        <section class="dropdown">
+          <ul>
+            <li>0.8.0</li>
+            <li>0.7.0</li>
+          </ul>
+        </section>
+      </section>
+      <section class="top">
+        <nav>
+          <ul>
+            <li class="docs">
+              <a href="http://doc.rust-lang.org/doc/master/std/index.html">Docs</a>
+              <div class="sub">
+                <a href="http://doc.rust-lang.org/doc/master/std/index.html">std</a>
+                <a href="http://doc.rust-lang.org/doc/master/rust.html">manual</a>
+                <a href="http://doc.rust-lang.org/doc/master/extra/index.html">extra</a>
+              </div>
+            </li>
+            <li class="tutorial"><a href="http://doc.rust-lang.org/doc/master/tutorial.html">Tutorial</a></li>
+            <li class="github"><a href="https://github.com/mozilla/rust">Github</a></li>
+          </ul>
+        </nav>
+        <h1><a href="/">Rust</a></h1>
+      </section>
+        <section class="tag">
+          <h2>A safe, concurrent, practical programming language.</h2>
+        </section>
+
+        <section class="code">
+{% highlight rust %}
+fn main() {
+  let world = "World";
+  println!("Hello {}", world);
+}
+{% endhighlight %}
+        </section>
+        <section class="download">
+          <button class="download-button">
+            Download For
+          </button>
+        </section>
+        <section class="version">
+          <a href="/" title="All Downloads">All Downloads</a>
+        </section>
+    </header>
+    <section class="content">
+      <section class="backing">
+          <span>Supported by</span>
+          <a href="https://mozilla.org">
+            <img src="public/img/mozilla.png" width="120px" />
+          </a>
+      </section>
+    {{ content }}
+    </section>
+  </div>
+
+  <script type="text/javascript" src="public/js/jquery.min.js"></script>
+  <script type="text/javascript" src="public/js/app.js"></script>
+</body>
+</html>
